@@ -7,6 +7,7 @@ target 'IosComponentDemo' do
 
   # Pods for IosComponentDemo
   pod 'AFNetworking', '~> 3.1.0'
+  pod 'YYCache', '~> 1.0.4'
 
   target 'IosComponentDemoTests' do
     inherit! :search_paths

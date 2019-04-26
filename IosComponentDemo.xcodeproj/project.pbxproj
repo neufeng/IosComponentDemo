@@ -17,6 +17,7 @@
 		4C4C795C2272B55300160BE7 /* IosComponentDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C795B2272B55300160BE7 /* IosComponentDemoTests.m */; };
 		4C4C79672272B55300160BE7 /* IosComponentDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C79662272B55300160BE7 /* IosComponentDemoUITests.m */; };
 		4C4C79772272CAAD00160BE7 /* HQNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C79762272CAAD00160BE7 /* HQNetworking.m */; };
+		4C4C797B2272D3DA00160BE7 /* HQCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C797A2272D3DA00160BE7 /* HQCache.m */; };
 		65F99B8DC6134980F7D66313 /* libPods-IosComponentDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 637FB2635B53DFE17BC24E56 /* libPods-IosComponentDemoTests.a */; };
 		BA51235CF8288EE8517D8D0D /* libPods-IosComponentDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA88CB0DF3FE8AAD0CDBC6CB /* libPods-IosComponentDemoUITests.a */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,8 @@
 		4C4C79682272B55300160BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C4C79752272CAAC00160BE7 /* HQNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQNetworking.h; sourceTree = "<group>"; };
 		4C4C79762272CAAD00160BE7 /* HQNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQNetworking.m; sourceTree = "<group>"; };
+		4C4C79792272D3DA00160BE7 /* HQCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HQCache.h; sourceTree = "<group>"; };
+		4C4C797A2272D3DA00160BE7 /* HQCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQCache.m; sourceTree = "<group>"; };
 		637FB2635B53DFE17BC24E56 /* libPods-IosComponentDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IosComponentDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7156E1028B3A9BF02596CC93 /* Pods-IosComponentDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosComponentDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-IosComponentDemoUITests/Pods-IosComponentDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		73B1E925B843DB3B5BEA551C /* Pods-IosComponentDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosComponentDemoTests.release.xcconfig"; path = "Target Support Files/Pods-IosComponentDemoTests/Pods-IosComponentDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +133,7 @@
 				4C4C794D2272B55300160BE7 /* LaunchScreen.storyboard */,
 				4C4C79502272B55300160BE7 /* Info.plist */,
 				4C4C79512272B55300160BE7 /* main.m */,
+				4C4C79782272D39200160BE7 /* Cache */,
 				4C4C79742272CA4100160BE7 /* Network */,
 			);
 			path = IosComponentDemo;
@@ -160,6 +164,15 @@
 				4C4C79762272CAAD00160BE7 /* HQNetworking.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		4C4C79782272D39200160BE7 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				4C4C79792272D3DA00160BE7 /* HQCache.h */,
+				4C4C797A2272D3DA00160BE7 /* HQCache.m */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 		9D7E8F9420C26F2159EDB93A /* Frameworks */ = {
@@ -378,6 +391,7 @@
 				4C4C79472272B55100160BE7 /* ViewController.m in Sources */,
 				4C4C79522272B55300160BE7 /* main.m in Sources */,
 				4C4C79772272CAAD00160BE7 /* HQNetworking.m in Sources */,
+				4C4C797B2272D3DA00160BE7 /* HQCache.m in Sources */,
 				4C4C79442272B55100160BE7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
